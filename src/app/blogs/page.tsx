@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { div } from 'framer-motion/client';
+// import { div } from 'framer-motion/client';
 
 interface BlogPost {
   id: string;

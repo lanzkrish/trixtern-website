@@ -1,12 +1,12 @@
 'use client'
 
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Calendar } from "react-calendar";
-import { Search } from "lucide-react";
+// import { Calendar } from "react-calendar";
+// import { Search } from "lucide-react";
 import "react-calendar/dist/Calendar.css";
 // import "./App.css";
 
@@ -91,7 +91,7 @@ function Home() {
 
       {/* Final CTA */}
       <section className="py-24 bg-blue-300 text-center">
-        <h2 className="text-3xl font-semibold mb-6">Let's Discuss Your Project</h2>
+        <h2 className="text-3xl font-semibold mb-6">Let&apos;s Discuss Your Project</h2>
         <Button className="bg-black text-white px-8 py-4 rounded-2xl text-lg">Contact Us</Button>
       </section>
     </div>
