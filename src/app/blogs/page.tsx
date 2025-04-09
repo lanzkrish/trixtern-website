@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface BlogPost {
   id: string;
@@ -48,7 +49,7 @@ const BlogsPage: React.FC = () => {
       {/* Latest Post */}
       <div className="mb-12">
         <Link href={`/blogs/blog-insights/${latestPost.id}`} className="flex flex-col md:flex-row border border-gray-300 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1 bg-gray-100">
-          <img src={latestPost.image} alt={latestPost.title} className="w-full md:w-1/2 object-cover" />
+          <Image src={latestPost.image} alt={latestPost.title} className="w-full md:w-1/2 object-cover" />
           <div className="p-4">
             <h2 className="text-2xl font-semibold text-indigo-700 mb-2">{latestPost.title}</h2>
             <p className="text-gray-700 mb-4">{latestPost.description}</p>
@@ -61,7 +62,7 @@ const BlogsPage: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {olderPosts.map((post) => (
           <Link key={post.id} href={`/blogs/blog-insights/${post.id}`} className="flex flex-col border border-gray-300 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-transform transform hover:-translate-y-1 bg-gray-100">
-            <img src={post.image} alt={post.title} className="w-full object-cover" />
+            <Image src={post.image} alt={post.title} className="w-full object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-indigo-700 mb-2">{post.title}</h3>
               <p className="text-sm text-gray-500">{post.date}</p>
