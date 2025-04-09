@@ -15,9 +15,9 @@ export default function Header() {
       <Link href="/" className="-m-1.5 p-1.5">
         <span className="sr-only">Interncify</span>
                <Image
-                         src="/trixtern.png"
+                         src="/trixtern_full.png"
                          alt="Trixtern Technologies"
-                         width={60}
+                         width={160}
                          height={35}
                          priority
                        />
