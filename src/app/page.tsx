@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import React from "react";
 // import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -35,6 +36,7 @@ function Home() {
           {[1, 2, 3, 4, 5].map((id) => (
             <div key={id} className="h-12 w-32 bg-gray-200 rounded shadow-sm"></div>
           ))}
+          
         </div>
       </section>
 

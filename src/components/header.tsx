@@ -86,7 +86,7 @@ export default function Header() {
             <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
               About
             </Link>
-            <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <Link href="/careers" className="text-sm font-semibold leading-6 text-gray-900">
               Careers
             </Link>
           </div>
@@ -115,7 +115,7 @@ export default function Header() {
               <Link href="#" className="block text-sm font-semibold leading-6 text-gray-900">
                 About
               </Link>
-              <Link href="#" className="block text-sm font-semibold leading-6 text-gray-900">
+              <Link href="/careers" className="block text-sm font-semibold leading-6 text-gray-900">
                 Careers
               </Link>
               <Link href="#" className="block text-sm font-semibold leading-6 text-gray-900">
