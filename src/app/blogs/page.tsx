@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { div } from 'framer-motion/client';
 
 interface BlogPost {
   id: string;
@@ -50,8 +51,9 @@ const BlogsPage: React.FC = () => {
   const olderPosts = sortedBlogs.slice(1);
 
   return (
-    <div className="p-8 max-w-6xl mx-auto  text-gray-800">
-      <h1 className="text-center text-4xl font-bold mb-8 text-indigo-700">Blogs & Insights</h1>
+    <div className="bg-gray-50 text-gray-900">
+     <div className="p-8 max-w-6xl mx-auto  text-gray-800">
+      <h1 className="text-center text-4xl font-bold mb-8 text-blue-700">Blogs & Insights</h1>
 
       {/* Latest Post */}
       <div className="mb-12">
@@ -59,7 +61,7 @@ const BlogsPage: React.FC = () => {
           <Image src={latestPost.image} alt={latestPost.title} className="w-full md:w-1/2 object-cover" width={90}
               height={90} />
           <div className="p-4">
-            <h2 className="text-2xl font-semibold text-indigo-700 mb-2">{latestPost.title}</h2>
+            <h2 className="text-2xl font-semibold text-blue-700 mb-2">{latestPost.title}</h2>
             <p className="text-gray-700 mb-4">{latestPost.description}</p>
             <p className="text-sm text-gray-500">{latestPost.date}</p>
           </div>
@@ -73,12 +75,13 @@ const BlogsPage: React.FC = () => {
             <Image src={post.image} alt={post.title} className="w-full object-cover" width={20}
               height={20} />
             <div className="p-4">
-              <h3 className="text-xl font-semibold text-indigo-700 mb-2">{post.title}</h3>
+              <h3 className="text-xl font-semibold text-blue-700 mb-2">{post.title}</h3>
               <p className="text-sm text-gray-500">{post.date}</p>
             </div>
           </Link>
         ))}
       </div>
+    </div>
     </div>
   );
 };

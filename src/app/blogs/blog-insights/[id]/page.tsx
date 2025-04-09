@@ -12,6 +12,12 @@ interface BlogPost {
 
 const blogData: BlogPost[] = [
   {
+    id: '4',
+    title: 'Ai in Healthcare: Revolutionizing Patient Care',
+    content: 'Discover how AI is transforming healthcare and improving patient outcomes.',
+    date: 'April 9, 2025',
+  },
+  {
     id: '3',
     title: 'The Future of AI: Trends to Watch',
     content: 'Artificial Intelligence (AI) is rapidly evolving, and its impact on industries is profound. In this blog, we explore the latest trends shaping the future of AI, including advancements in machine learning, ethical considerations, and the integration of AI into everyday life. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, officiis aperiam. Ad deleniti, inventore aliquam itaque omnis culpa iste dolorem excepturi cumque? Soluta corporis fugit placeat architecto velit? Pariatur, perferendis? .',

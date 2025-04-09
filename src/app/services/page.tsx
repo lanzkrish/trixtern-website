@@ -2,15 +2,15 @@ import React from "react";
 
 const ServicesPage: React.FC = () => {
   return (
-    <div className="font-sans bg-purple-50 text-gray-800 p-5">
+    <div className="font-sans bg-gray-50 text-gray-800 p-5">
       <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-purple-800">Our Services</h1>
+        <h1 className="text-4xl font-bold text-blue-800">Our Services</h1>
         <p className="text-lg text-gray-600 mt-2">
           Empowering businesses with cutting-edge technology solutions.
         </p>
       </header>
       <main className="max-w-4xl mx-auto">
-        <section className="mb-8 p-6 bg-purple-100 rounded-lg shadow-md">
+        <section className="mb-8 p-6 bg-blue-100 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-blue-900">
             AI-driven Automation
           </h2>
@@ -19,7 +19,7 @@ const ServicesPage: React.FC = () => {
             powered by AI.
           </p>
         </section>
-        <section className="mb-8 p-6 bg-purple-100 rounded-lg shadow-md">
+        <section className="mb-8 p-6 bg-blue-100 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-blue-900">
             FinTech Solutions & Smart Trading Systems
           </h2>
@@ -28,7 +28,7 @@ const ServicesPage: React.FC = () => {
             and trading systems.
           </p>
         </section>
-        <section className="mb-8 p-6 bg-purple-100 rounded-lg shadow-md">
+        <section className="mb-8 p-6 bg-blue-100 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-blue-900">
             AI-powered Data Analytics & Insights
           </h2>
@@ -36,7 +36,7 @@ const ServicesPage: React.FC = () => {
             Unlock actionable insights with advanced AI-driven data analytics.
           </p>
         </section>
-        <section className="mb-8 p-6 bg-purple-100 rounded-lg shadow-md">
+        <section className="mb-8 p-6 bg-blue-100 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-blue-900">
             Cybersecurity & Compliance
           </h2>
@@ -45,7 +45,7 @@ const ServicesPage: React.FC = () => {
             solutions.
           </p>
         </section>
-        <section className="mb-8 p-6 bg-purple-100 rounded-lg shadow-md">
+        <section className="mb-8 p-6 bg-blue-100 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold text-blue-900">
             Cloud & Blockchain Integration for FinTech
           </h2>
