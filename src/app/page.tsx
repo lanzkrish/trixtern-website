@@ -90,8 +90,8 @@ function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-blue-300 text-center">
-        <h2 className="text-3xl font-semibold mb-6">Let&apos;s Discuss Your Project</h2>
+      <section className="py-24 text-center ">
+        <h2 className="text-3xl font-semibold mb-6">Lets Discuss Your Project</h2>
         <Button className="bg-black text-white px-8 py-4 rounded-2xl text-lg">Contact Us</Button>
       </section>
     </div>
