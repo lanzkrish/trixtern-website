@@ -1,15 +1,11 @@
 'use client'
 
-import Image from "next/image";
+
 import React from "react";
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-// import { Calendar } from "react-calendar";
-// import { Search } from "lucide-react";
 import "react-calendar/dist/Calendar.css";
-// import "./App.css";
 
 function Home() {
   return (
