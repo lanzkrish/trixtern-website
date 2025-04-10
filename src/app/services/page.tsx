@@ -2,18 +2,13 @@
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import PageHeader from "@/components/ui/page-header";
 
 const ServicesPage: React.FC = () => {
   return (
     <div className="bg-white text-gray-900">
       {/* Header Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-blue-100 via-white to-purple-100 text-center">
-        <h1 className="text-4xl font-bold mb-6">Our Services</h1>
-        <p className="text-lg max-w-3xl mx-auto">
-          Empowering businesses with cutting-edge technology solutions.
-        </p>
-      </section>
-
+      <PageHeader title="Our Services" description="Empowering businesses with cutting-edge technology solutions." />
       {/* Services Section */}
       <section className="py-20 px-6 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-14">What We Offer</h2>

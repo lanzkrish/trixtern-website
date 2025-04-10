@@ -83,7 +83,7 @@ export default function Header() {
             <Link href="/blogs" className="text-sm font-semibold leading-6 text-gray-900">
               Blogs & Insights
             </Link>
-            <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <Link href="/about" className="text-sm font-semibold leading-6 text-gray-900">
               About
             </Link>
             <Link href="/careers" className="text-sm font-semibold leading-6 text-gray-900">
@@ -93,7 +93,7 @@ export default function Header() {
 
           {/* Contact Us Button */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            <Link href="/contact-us" className="text-sm font-semibold leading-6 text-gray-900">
               Contact Us <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
@@ -112,13 +112,13 @@ export default function Header() {
               <Link href="/blogs" className="block text-sm font-semibold leading-6 text-gray-900">
                 Blogs & Insights
               </Link>
-              <Link href="#" className="block text-sm font-semibold leading-6 text-gray-900">
+              <Link href="/about" className="block text-sm font-semibold leading-6 text-gray-900">
                 About
               </Link>
               <Link href="/careers" className="block text-sm font-semibold leading-6 text-gray-900">
                 Careers
               </Link>
-              <Link href="#" className="block text-sm font-semibold leading-6 text-gray-900">
+              <Link href="/contact-us" className="block text-sm font-semibold leading-6 text-gray-900">
                 Contact Us
               </Link>
             </div>

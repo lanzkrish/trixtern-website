@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import PageHeader from '@/components/ui/page-header';
 
 interface BlogPost {
   id: string;
@@ -52,12 +53,7 @@ const BlogsPage: React.FC = () => {
   return (
     <div className="bg-gray-50 text-gray-900">
       {/* Header Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-blue-100 via-white to-blue-100 text-center">
-        <h1 className="text-4xl font-bold mb-6 text-blue-700">Blogs & Insights</h1>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          Stay updated with the latest trends, insights, and innovations in AI, FinTech, and beyond.
-        </p>
-      </section>
+      <PageHeader title="Blogs & Insights" description="Stay updated with the latest trends, insights, and innovations in AI, FinTech, and beyond." />
 
       {/* Latest Post */}
       <section className="py-12 px-6">

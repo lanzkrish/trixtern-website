@@ -3,18 +3,23 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import PageHeader from "@/components/ui/page-header";
 
 export default function CareersPage() {
   return (
     <div className="bg-white text-gray-900">
       {/* About Our Company */}
-      <section className="py-20 px-6 bg-gradient-to-br from-blue-100 via-white to-purple-100 text-center">
+      <PageHeader
+        title="Careers at Trixtern Technologies"
+        description="Join us in shaping the future of technology. We are a team of innovators, thinkers, and doers, dedicated to pushing the boundaries of what&apos;s possible."
+      />
+      {/* <section className="py-20 px-6 bg-gradient-to-br from-blue-100 via-white to-purple-100 text-center">
         <h1 className="text-4xl font-bold mb-6">Join Our Team</h1>
         <p className="text-lg max-w-3xl mx-auto">
           At Trixtern Technologies, we are committed to innovation, collaboration, and excellence. 
           Join a team of passionate individuals who are shaping the future of AI, FinTech, and beyond.
         </p>
-      </section>
+      </section> */}
 
       {/* Open Positions */}
       <section className="py-20 px-6 bg-gray-50">
