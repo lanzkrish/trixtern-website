@@ -1,28 +1,18 @@
 "use client";
 
+import PageHeader from "@/components/ui/page-header";
+
 
 function ContactUs() {
   return (
-    <div className="bg-gray-50 text-gray-900 bg-gradient-to-br from-blue-100 via-white to-blue-100">
+    <div className="bg-white text-gray-900 mx-50 ">
       {/* Header Section */}
-      <section className="py-20 px-6  text-center">
-        <h1 className="text-4xl font-bold mb-6 text-blue-700">Contact Us</h1>
-        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          Have questions or need assistance? Fill out the form below, and we&apos;ll get back to you as soon as possible.
-        </p>
-      </section>
+      <PageHeader title="Contact Us" description="Have questions or need assistance? Fill out the form below, and we&apos;ll get back to you as soon as possible." />
 
       {/* Contact Form Section */}
-      <section className=" px-6">
-      <div className="flex flex-col items-center justify-center rounded-lg  p-8">
-          {/* <div className="text-center">
-            <h1 className="text-3xl font-semibold text-gray-900 mb-3">
-              Contact Us
-            </h1>
-            <p className="text-gray-500 dark:text-gray-600">
-              Fill up the form below to send us a message.
-            </p>
-          </div> */}
+      <section className=" px-16 pb-16">
+      <div className="flex flex-col items-center justify-center rounded-lg  p-8 bg-gray-100">
+          
           <form
             action="https://api.web3forms.com/submit"
             method="POST"

@@ -3,12 +3,13 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import CustomLink from "./link";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white z-2">
+    <div className="bg-white z-2 border-b border-gray-300">
       <header>
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -74,21 +75,11 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:gap-x-12">
-            <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
-              Home
-            </Link>
-            <Link href="/services" className="text-sm font-semibold leading-6 text-gray-900">
-              Services
-            </Link>
-            <Link href="/blogs" className="text-sm font-semibold leading-6 text-gray-900">
-              Blogs & Insights
-            </Link>
-            <Link href="/about" className="text-sm font-semibold leading-6 text-gray-900">
-              About
-            </Link>
-            <Link href="/careers" className="text-sm font-semibold leading-6 text-gray-900">
-              Careers
-            </Link>
+            <CustomLink href="../">Home</CustomLink>
+            <CustomLink href="/services">Services</CustomLink>
+            <CustomLink href="/blogs">Blogs & Insights</CustomLink>
+            <CustomLink href="/about">About</CustomLink>
+            <CustomLink href="/careers">Careers</CustomLink>
           </div>
 
           {/* Contact Us Button */}

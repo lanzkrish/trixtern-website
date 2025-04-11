@@ -14,7 +14,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({ title, alignment = "cente
             : "text-center";
 
     return (
-        <h2 className={`text-3xl font-bold mb-8 text-gray-800 ${alignmentClass}`}>
+        <h2 className={`text-2xl sm:text-3xl font-bold mb-8 text-gray-800 ${alignmentClass}`}>
             {title}
         </h2>
     );

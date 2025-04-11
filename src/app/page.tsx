@@ -9,7 +9,7 @@ import "react-calendar/dist/Calendar.css";
 
 function Home() {
   return (
-    <div className="bg-white text-gray-900">
+    <div className="bg-white text-gray-900 ">
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col items-center justify-center text-center bg-gradient-to-br from-blue-100 via-white to-purple-100 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20 bg-[url('/ai-background.svg')] bg-cover bg-center" />
