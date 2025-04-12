@@ -5,13 +5,13 @@ import PageHeader from "@/components/ui/page-header";
 
 function ContactUs() {
   return (
-    <div className="bg-white text-gray-900 mx-50 ">
+    <div className="bg-gray-50 text-gray-900 mx-50 ">
       {/* Header Section */}
       <PageHeader title="Contact Us" description="Have questions or need assistance? Fill out the form below, and we&apos;ll get back to you as soon as possible." />
 
       {/* Contact Form Section */}
       <section className=" px-16 pb-16">
-      <div className="flex flex-col items-center justify-center rounded-lg  p-8 bg-gray-100">
+      <div className="flex flex-col items-center justify-center rounded-lg  p-8 bg-gray-50">
           
           <form
             action="https://api.web3forms.com/submit"

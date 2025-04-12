@@ -15,6 +15,13 @@ interface BlogPost {
 
 const blogs: BlogPost[] = [
   {
+    id: '5',
+    title: 'The Role of AI in Gaming: How Artificial Intelligence is Powering the Future of Games',
+    description: 'Artificial Intelligence (AI) is no longer just a sci-fi fantasy or a futuristic concept—it’s very real, and it’s  stransforming industries across the board.',
+    image: '/pexels-pavel-danilyuk-8438922.jpg',
+    date: 'April 12, 2025',
+  },
+  {
     id: '4',
     title: 'Ai in Healthcare: Revolutionizing Patient Care',
     description: 'Discover how AI is transforming healthcare and improving patient outcomes.',

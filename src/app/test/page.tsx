@@ -1,10 +1,11 @@
 'use client'
 
 import React from "react";
-
-export default function LandingPage() {
+export default function testStealth({}) {
   return (
-    <div className="bg-white text-gray-900">
-        Test Page
+
+    <div>
+      test
     </div>
-  )}
+  );
+  }

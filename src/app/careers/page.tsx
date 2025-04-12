@@ -8,18 +8,28 @@ import PageHeader from "@/components/ui/page-header";
 export default function CareersPage() {
   return (
     <div className="bg-white text-gray-900">
-      {/* About Our Company */}
+      {/* Page Header */}
       <PageHeader
         title="Careers at Trixtern Technologies"
-        description="Join us in shaping the future of technology. We are a team of innovators, thinkers, and doers, dedicated to pushing the boundaries of what&apos;s possible."
+        description="Join us in shaping the future of technology. We are a team of innovators, thinkers, and doers, dedicated to pushing the boundaries of what's possible."
       />
-      {/* <section className="py-20 px-6 bg-gradient-to-br from-blue-100 via-white to-purple-100 text-center">
-        <h1 className="text-4xl font-bold mb-6">Join Our Team</h1>
-        <p className="text-lg max-w-3xl mx-auto">
-          At Trixtern Technologies, we are committed to innovation, collaboration, and excellence. 
-          Join a team of passionate individuals who are shaping the future of AI, FinTech, and beyond.
-        </p>
-      </section> */}
+
+      {/* Hero Section */}
+      <section className="relative h-[400px] overflow-hidden text-white text-center">
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/3254011-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="relative z-10 flex flex-col justify-center items-center h-full bg-black/50">
+          <h2 className="text-4xl font-bold mb-4">Be a part of the next Revolution</h2>
+        </div>
+      </section>
 
       {/* Open Positions */}
       <section className="py-20 px-6 bg-gray-50">

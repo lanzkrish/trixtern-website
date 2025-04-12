@@ -14,6 +14,13 @@ interface BlogPost {
 
 const blogData: BlogPost[] = [
   {
+    id: '5',
+    title: 'The Role of AI in Gaming: How Artificial Intelligence is Powering the Future of Games',
+    content: "Artificial Intelligence (AI) is no longer just a sci-fi fantasy or a futuristic concept—it’s very real, and it's transforming industries across the board. One of the most exciting spaces where AI is making a huge impact? Gaming. \ From the NPCs that act smarter than ever, to adaptive difficulty and dynamic storytelling, AI is pushing the boundaries of what’s possible in video games. Whether you're a casual gamer or a hardcore developer, understanding how AI works in gaming gives you a sneak peek into the future of interactive entertainment. ",
+    image: '/pexels-pavel-danilyuk-8438922.jpg',
+    date: 'April 12, 2025',
+  },
+  {
     id: '4',
     title: 'Ai in Healthcare: Revolutionizing Patient Care',
     content: 'Discover how AI is transforming healthcare and improving patient outcomes.',
@@ -57,8 +64,8 @@ const BlogPage: React.FC = () => {
     <div className="bg-gray-50 text-gray-900">
       {/* Header Section */}
       <section className="py-20 px-6 bg-gradient-to-br from-blue-100 via-white to-purple-100 text-center">
-        <h1 className="text-4xl font-bold mb-6 text-purple-700">{blogPost.title}</h1>
-        <p className="text-sm text-purple-500">{blogPost.date}</p>
+        <h1 className="text-4xl font-bold mb-6 text-blue-700">{blogPost.title}</h1>
+        <p className="text-sm text-blue-500">{blogPost.date}</p>
       </section>
 
       {/* Blog Content */}
@@ -67,9 +74,8 @@ const BlogPage: React.FC = () => {
            <Image
                        src={blogPost.image || '/default-image.jpg'}
                        alt={blogPost.title}
-                       className="w-full md:w-1/2 object-cover"
-                       width={500}
-                       height={300}
+                       width={800}
+                       height={800}
                      />
           <p className="text-lg leading-relaxed">{blogPost.content}</p>
         </div>

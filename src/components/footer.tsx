@@ -44,7 +44,7 @@ export default function Footer() {
             {
               title: "Product",
               links: [
-                { name: "Interncify", href: "https://interncify.com" },
+                // { name: "Interncify", href: "https://interncify.com" },
                 { name: "Features", href: "#" },
                 { name: "Integrations", href: "#" },
                 { name: "Pricing", href: "#" },
