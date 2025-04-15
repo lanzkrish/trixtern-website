@@ -54,8 +54,8 @@ export default function Footer() {
             {
               title: "Company",
               links: [
-                { name: "Privacy", href: "#" },
-                { name: "Terms of Service", href: "#" },
+                { name: "Privacy", href: "/privacy&policy" },
+                { name: "Terms of Service", href: "/terms-of-service" },
               ],
             },
             {
