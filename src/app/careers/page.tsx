@@ -18,14 +18,14 @@ export default function CareersPage() {
 
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden text-white text-center">
-        <video
+        <video poster="/videos/preview/3254011-uhd_1280_720_still.png"
           className="absolute top-0 left-0 w-full h-full object-cover"
           autoPlay
           loop
           muted
           playsInline
         >
-          <source src="/3254011-uhd_3840_2160_25fps.mp4" type="video/mp4" />
+          <source src="/videos/3254011-uhd_1280_720_25fps.mov" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="relative z-10 flex flex-col justify-center items-center h-full bg-black/50">

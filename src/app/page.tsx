@@ -19,9 +19,15 @@ function Home() {
           transition={{ duration: 1 }}
           className="z-10 max-w-4xl px-6"
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Future-Ready AI & FinTech Solutions
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight ">
+            Future-Ready  AI & FinTech  Solutions
           </h1>
+          <span className=" pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+              AI & FinTech 
+      </span>
+      {/* <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight ">
+          Solutions
+          </h1> */}
           <p className="text-xl md:text-2xl mb-8">
             Empowering businesses with intelligent automation.
           </p>
@@ -31,7 +37,7 @@ function Home() {
             </Button>
           </Link>
         </motion.div>
-        <Globe className="top-48 "  />
+        <Globe className="top-18 "  />
       </section>
     </div>
   );

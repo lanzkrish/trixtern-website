@@ -4,14 +4,14 @@ const Banner: React.FC = () => {
     return (
         <main>
             <section className="relative h-[400px] overflow-hidden text-white text-center">
-                <video
+                <video poster='/videos/preview/6774633-hd_1280_720_still.png'
                     className="absolute top-0 left-0 w-full h-full object-cover"
                     autoPlay
                     loop
                     muted
                     playsInline
                 >
-                    <source src="/6774633-uhd_3840_2160_30fps.mp4" type="video/mp4" />
+                    <source src="/videos/6774633-hd-1280_720_25fps.mov" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="relative z-10 flex flex-col justify-center items-center h-full bg-black/50">
