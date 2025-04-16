@@ -31,7 +31,7 @@ function Home() {
             </Button>
           </Link>
         </motion.div>
-        <Globe className="top-78 "  />
+        <Globe className="top-48 "  />
       </section>
     </div>
   );
