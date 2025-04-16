@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import "react-calendar/dist/Calendar.css";
+import { Globe } from "@/components/magicui/globe";
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
             </Button>
           </Link>
         </motion.div>
+        <Globe className="top-78 "  />
       </section>
     </div>
   );

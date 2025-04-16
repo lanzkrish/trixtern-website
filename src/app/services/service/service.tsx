@@ -1,12 +1,9 @@
-'use client';
 
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import PageHeader from "@/components/ui/page-header";
-import TechWeUse from "@/components/TechWeUse";
-// import { Globe } from "@/registry/magicui/globe";
 
-const ServicesPage: React.FC = () => {
+export default function txtServices() {
   return (
     <div className="bg-white text-gray-900">
       {/* Header Section */}
@@ -63,21 +60,7 @@ const ServicesPage: React.FC = () => {
           ))}
         </div>
       </section>
-      <section className="bg-white text-gray-900">
-      <div className="py-20 px-6 bg-gray-50">
-      <h2 className="text-3xl font-bold text-center mb-14 text-gray-800">
-          What We Use
-        </h2>
-
-        <div className="text-center text-gray-600">
-
-          We utilize cutting-edge technologies like AI, Blockchain, and Cloud Computing to deliver exceptional results.
-        </div>
-        <TechWeUse/>
-      </div>
-      </section>
     </div>
   );
 };
 
-export default ServicesPage;
