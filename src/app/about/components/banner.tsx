@@ -4,7 +4,7 @@ const Banner: React.FC = () => {
     return (
         <main>
             <section className="relative h-[400px] overflow-hidden text-white text-center">
-                <video poster='/videos/preview/6774633-hd_1280_720_still.png'
+                <video poster='/videos/preview/6774633-hd-1280_720_still.png'
                     className="absolute top-0 left-0 w-full h-full object-cover"
                     autoPlay
                     loop

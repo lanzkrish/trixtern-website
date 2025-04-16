@@ -22,9 +22,9 @@ function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight ">
             Future-Ready  AI & FinTech  Solutions
           </h1>
-          <span className=" pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+          {/* <span className=" pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
               AI & FinTech 
-      </span>
+      </span> */}
       {/* <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight ">
           Solutions
           </h1> */}
