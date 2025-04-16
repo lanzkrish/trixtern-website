@@ -15,6 +15,13 @@ interface BlogPost {
 
 const blogs: BlogPost[] = [
   {
+    id: '6',
+    title: 'AI in Fintech: Top Use Cases & Trends to Watch in 2025',
+    description: 'Artificial Intelligence (AI) is no longer just a sci-fi fantasy or a futuristic concept—it’s very real, and it’s  stransforming industries across the board.',
+    image: '',
+    date: 'April 16, 2025',
+  },
+  {
     id: '5',
     title: 'The Role of AI in Gaming: How Artificial Intelligence is Powering the Future of Games',
     description: 'Artificial Intelligence (AI) is no longer just a sci-fi fantasy or a futuristic concept—it’s very real, and it’s  stransforming industries across the board.',
@@ -32,21 +39,21 @@ const blogs: BlogPost[] = [
     id: '3',
     title: 'The Future of AI: Trends to Watch',
     description: 'Explore the latest trends shaping the future of artificial intelligence.',
-    image: '/images/blog1.jpg',
+    image: '',
     date: 'April 5, 2025',
   },
   {
     id: '2',
     title: 'How AI is Transforming Businesses',
     description: 'Discover how AI is revolutionizing industries worldwide.',
-    image: '/images/blog2.jpg',
+    image: '',
     date: 'March 28, 2025',
   },
   {
     id: '1',
     title: 'Ethics in AI Development',
     description: 'A deep dive into the ethical considerations of AI development.',
-    image: '/images/blog3.jpg',
+    image: '',
     date: 'March 20, 2025',
   },
 ];
@@ -69,13 +76,16 @@ const BlogsPage: React.FC = () => {
           href={`/blogs/blog-insights/${latestPost.id}`}
           className="flex flex-col md:flex-row border border-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1 bg-white max-w-5xl mx-auto"
         >
-          <Image
+          {latestPost.image && (
+            <Image
             src={latestPost.image}
             alt={latestPost.title}
             className="w-full md:w-1/2 object-cover"
             width={500}
             height={300}
           />
+          )}
+
           <div className="p-6">
             <h2 className="text-2xl font-semibold text-blue-700 mb-2">{latestPost.title}</h2>
             <p className="text-gray-600 mb-4">{latestPost.description}</p>
@@ -94,13 +104,14 @@ const BlogsPage: React.FC = () => {
               href={`/blogs/blog-insights/${post.id}`}
               className="flex flex-col border border-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1 bg-white"
             >
-              <Image
-                src={post.image}
-                alt={post.title}
-                className="w-full object-cover"
-                width={400}
-                height={250}
-              />
+              {post.image && (
+                          <Image
+                            src={post.image}
+                            alt={post.title}
+                            width={800}
+                            height={800}
+                          />
+                        )}
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-blue-700 mb-2">{post.title}</h3>
                 <p className="text-sm text-gray-500">{post.date}</p>
