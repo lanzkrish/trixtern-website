@@ -47,7 +47,7 @@ const blogData: BlogPost[] = [
     title: 'How AI is Transforming Businesses',
     contentPath: './blogContents/content2', // Reference to the content file
     date: 'March 28, 2025',
-    image: '/images/blog1.jpg',
+    image: '',
   },
   {
     id: '1',
@@ -88,7 +88,7 @@ const BlogPage: React.FC = () => {
 
       {/* Blog Content */}
       <section className="pb-20 px-6 bg-white">
-        <div className="max-w-4xl mx-auto bg-gray-200 rounded-lg shadow-md p-8">
+        <div className="max-w-4xl mx-auto bg-gray-100 rounded-lg shadow-md p-8">
           {blogPost.image && (
             <Image
               src={blogPost.image}

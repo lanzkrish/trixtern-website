@@ -115,6 +115,7 @@ const BlogsPage: React.FC = () => {
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-blue-700 mb-2">{post.title}</h3>
                 <p className="text-sm text-gray-500">{post.date}</p>
+                <p className="text-sm text-gray-500">{post.description}</p>
               </div>
             </Link>
           ))}
