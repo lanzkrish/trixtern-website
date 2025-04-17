@@ -2,25 +2,26 @@
 
 import PageHeader from "@/components/ui/page-header";
 
-
 function ContactUs() {
   return (
-    <div className="bg-white text-gray-900 mx-50 ">
+    <div className="bg-white text-gray-900 mx-4 sm:mx-6 md:mx-12">
       {/* Header Section */}
-      <PageHeader title="Contact Us" description="Have questions or need assistance? Fill out the form below, and we&apos;ll get back to you as soon as possible." />
+      <PageHeader
+        title="Contact Us"
+        description="Have questions or need assistance? Fill out the form below, and we&apos;ll get back to you as soon as possible."
+      />
 
       {/* Contact Form Section */}
-      <section className=" px-16 pb-16">
-      <div className="flex flex-col items-center justify-center rounded-lg  p-8 bg-gray-100">
-          
+      <section className="px-4 sm:px-6 md:px-16 pb-16">
+        <div className="flex flex-col items-center justify-center rounded-lg p-6 sm:p-8 bg-gray-100">
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
             className="w-full mt-6"
           >
-            <input 
-              type="hidden" 
-              name="from_name" 
+            <input
+              type="hidden"
+              name="from_name"
               value="Contact from Trixtern"
             />
             <input
@@ -33,13 +34,13 @@ function ContactUs() {
               name="subject"
               value="New Message from Trixtern tech. Web(Contact Us)"
             />
-            <input 
-              type="hidden" 
-              name="redirect" 
+            <input
+              type="hidden"
+              name="redirect"
               value="https://new.trixtern.com/contact-us/thank-you"
             />
             <input type="checkbox" name="botcheck" style={{ display: "none" }} />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label
                   htmlFor="first_name"
@@ -134,6 +135,6 @@ function ContactUs() {
       </section>
     </div>
   );
-};
+}
 
 export default ContactUs;

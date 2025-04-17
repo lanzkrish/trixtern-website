@@ -15,16 +15,16 @@ export default function JobApplicationPage() {
   }
 
   return (
-    <div className="bg-gray-50 text-gray-900 mx-50">
+    <div className="bg-gray-50 text-gray-900 mx-4 sm:mx-6 md:mx-12">
       {/* Header Section */}
-      <div className="text-center py-10">
-        <h1 className="text-3xl font-bold">{`Apply for ${job.title}`}</h1>
-        <p className="text-gray-600">{job.description}</p>
+      <div className="text-center py-6 sm:py-10">
+        <h1 className="text-2xl sm:text-3xl font-bold">{`Apply for ${job.title}`}</h1>
+        <p className="text-gray-600 text-sm sm:text-base">{job.description}</p>
       </div>
 
       {/* Job Application Form Section */}
-      <section className="px-16 pb-16">
-        <div className="flex flex-col items-center justify-center rounded-lg p-8 bg-gray-50">
+      <section className="px-4 sm:px-6 md:px-16 pb-16">
+        <div className="flex flex-col items-center justify-center rounded-lg p-6 sm:p-8 bg-gray-50">
           <form
             action="https://api.web3forms.com/submit"
             method="POST"
@@ -51,7 +51,7 @@ export default function JobApplicationPage() {
               value="https://new.trixtern.com/careers/job-description/thank-you"
             />
             <input type="checkbox" name="botcheck" style={{ display: 'none' }} />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label
                   htmlFor="first_name"
@@ -128,7 +128,7 @@ export default function JobApplicationPage() {
                 type="text"
                 name="linkedin"
                 id="linkedin"
-                placeholder='https://www.linkedin.com/...'
+                placeholder="https://www.linkedin.com/..."
                 required
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
@@ -138,7 +138,7 @@ export default function JobApplicationPage() {
                 htmlFor="otherlink"
                 className="block text-sm text-gray-600 dark:text-gray-800 mb-2"
               >
-                Linkedin Profile link
+                Other Link
               </label>
               <input
                 type="text"
@@ -167,7 +167,7 @@ export default function JobApplicationPage() {
             <div className="mt-6 text-center">
               <button
                 type="submit"
-                className="w-full md:w-auto px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 Submit Application
               </button>
