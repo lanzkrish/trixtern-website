@@ -81,14 +81,14 @@ const BlogPage: React.FC = () => {
   return (
     <div className="bg-gray-50 text-gray-900">
       {/* Header Section */}
-      <section className="py-20 px-6 bg-white text-center">
-        <h1 className="text-5xl font-extrabold text-center mb-8 text-gray-700">{blogPost.title}</h1>
-        <p className="text-sm text-gray-500">{blogPost.date}</p>
+      <section className="md:py-20 py-10 px-6 bg-white text-center">
+        <h1 className="sm:text-5xl text-3xl font-extrabold text-center sm:mb-8 mb-3 text-gray-700">{blogPost.title}</h1>
+        <p className="text-sm  text-gray-500">{blogPost.date}</p>
       </section>
 
       {/* Blog Content */}
-      <section className="pb-20 px-6 bg-white">
-        <div className="max-w-4xl mx-auto bg-gray-100 rounded-lg shadow-md p-8">
+      <section className="md:pb-20  md:px-6 bg-white">
+        <div className="max-w-4xl mx-auto bg-gray-100 md:rounded-lg shadow-md  md:p-8">
           {blogPost.image && (
             <Image
               src={blogPost.image}
