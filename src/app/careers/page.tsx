@@ -42,7 +42,7 @@ export default function CareersPage() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{position.title}</h3>
                 <p className="text-sm text-gray-500 mb-4">{position.location}</p>
-                <p className="text-gray-600 mb-6">{position.description}</p>
+                <p className="text-gray-600 mb-6">{position.bio}</p>
                 <Link href={`/careers/job-description/${position.id}`}>
                   <Button variant="outline" className="w-full">
                     Apply Now

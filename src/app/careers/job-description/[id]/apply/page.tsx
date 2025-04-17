@@ -1,11 +1,27 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'next/navigation';
 import { jobs } from '@/app/careers/components/jobs';
 
 export default function JobApplicationPage() {
   const { id } = useParams(); // Get the dynamic route parameter
+  const [additionalLinks, setAdditionalLinks] = useState<string[]>([]);
+
+  const addInputField = () => {
+    setAdditionalLinks([...additionalLinks, '']);
+  };
+
+  const handleInputChange = (index: number, value: string) => {
+    const updatedLinks = [...additionalLinks];
+    updatedLinks[index] = value;
+    setAdditionalLinks(updatedLinks);
+  };
+
+  const removeInputField = (index: number) => {
+    const updatedLinks = additionalLinks.filter((_, i) => i !== index);
+    setAdditionalLinks(updatedLinks);
+  };
 
   // Find the job based on the id
   const job = jobs.find((job) => job.id === Number(id));
@@ -19,7 +35,7 @@ export default function JobApplicationPage() {
       {/* Header Section */}
       <div className="text-center py-6 sm:py-10">
         <h1 className="text-2xl sm:text-3xl font-bold">{`Apply for ${job.title}`}</h1>
-        <p className="text-gray-600 text-sm sm:text-base">{job.description}</p>
+        <p className="text-gray-600 text-sm sm:text-base">{job.bio}</p>
       </div>
 
       {/* Job Application Form Section */}
@@ -119,13 +135,29 @@ export default function JobApplicationPage() {
             </div>
             <div className="mt-4">
               <label
+                htmlFor="porfolio"
+                className="block text-sm text-gray-600 dark:text-gray-800 mb-2"
+              >
+                Link to your portfolio/resume
+              </label>
+              <input
+                type="link"
+                name="porfolio"
+                id="porfolio"
+                placeholder="https://www.yourportfolio..."
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div className="mt-4">
+              <label
                 htmlFor="linkedin"
                 className="block text-sm text-gray-600 dark:text-gray-800 mb-2"
               >
-                Linkedin Profile link
+                LinkedIn Profile link
               </label>
               <input
-                type="text"
+                type="link"
                 name="linkedin"
                 id="linkedin"
                 placeholder="https://www.linkedin.com/..."
@@ -138,16 +170,50 @@ export default function JobApplicationPage() {
                 htmlFor="otherlink"
                 className="block text-sm text-gray-600 dark:text-gray-800 mb-2"
               >
-                Other Link
+                Any Other Links
               </label>
               <input
                 type="text"
                 name="otherlink"
                 id="otherlink"
-                placeholder="Any other link (GitHub, Portfolio, etc.)"
+                placeholder="Any other link (GitHub, Dribble, Behance, etc.)"
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
+
+            {/* Additional Links Section */}
+            {additionalLinks.map((link, index) => (
+              <div key={index} className="mt-4 flex items-center">
+                <input
+                  type="text"
+                  name={`additionalLink${index + 1}`}
+                  id={`AdditionalLink ${index + 1}`}
+                  placeholder={`Additional Link ${index + 1}`}
+                  value={link}
+                  required
+                  onChange={(e) => handleInputChange(index, e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <button
+                  type="button"
+                  onClick={() => removeInputField(index)}
+                  className="ml-2 px-3 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 focus:outline-none"
+                >
+                  Remove
+                </button>
+              </div>
+            ))}
+
+            <div className="mt-4">
+              <button
+                type="button"
+                onClick={addInputField}
+                className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none"
+              >
+                Add Another Link
+              </button>
+            </div>
+
             <div className="mt-4">
               <label
                 htmlFor="coverletter"
