@@ -35,7 +35,7 @@ const Content1: React.FC = () => {
         {/* Accountability and Transparency */}
         <h2 className="text-3xl font-bold text-gray-800 mb-6">Accountability and Transparency</h2>
         <p className="text-lg leading-relaxed text-gray-700 mb-6">
-          As AI systems become more complex, understanding how they make decisions can be challenging. This lack of transparency, often referred to as the "black box" problem, makes it difficult to hold AI accountable for its actions.
+          As AI systems become more complex, understanding how they make decisions can be challenging. This lack of transparency, often referred to as the &quot;black box&quot; problem, makes it difficult to hold AI accountable for its actions.
         </p>
         <p className="text-lg leading-relaxed text-gray-700 mb-12">
           To build trust, developers should focus on creating explainable AI systems that provide clear insights into their decision-making processes. Establishing accountability frameworks is also crucial to ensure that AI systems are used responsibly.
