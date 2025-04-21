@@ -92,7 +92,7 @@ export default function Footer() {
                         title={link.name}
                         className="flex items-center p-1"
                       >
-                        {link.icon ? link.icon : link.name}
+                        {"icon" in link && link.icon ? link.icon : link.name}
                       </a>
                     ) : (
                       <a
