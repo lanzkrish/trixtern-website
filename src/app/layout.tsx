@@ -5,6 +5,8 @@ import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -31,6 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
+        <ScrollProgress />
         {children}
         <Footer />
       </body>

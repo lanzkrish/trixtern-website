@@ -5,8 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CustomLink from "./link";
 
-import { Marquee } from "@/components/magicui/marquee";
-import ReviewCard  from "./ui/stealthtext";
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -120,11 +119,7 @@ export default function Header() {
         )}
       </header>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden  bg-red-600">
-              <Marquee pauseOnHover className="[--duration:20s]">
-                
-                  <ReviewCard  />
-                  <ReviewCard  />
-              </Marquee>
+              
               
               </div>
     </div>
