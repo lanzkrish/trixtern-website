@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import "react-calendar/dist/Calendar.css";
 import { Globe } from "@/components/magicui/globe";
+import Image from "next/image";
 
 
 function Home() {
@@ -29,12 +30,12 @@ function Home() {
           <div className="flex justify-center">
           <Link href="/services">
             <Button className="text-lg px-8 py-4 bg-blue-400 hover:bg-blue-500 text-black rounded-2xl shadow-lg m-4">
-              Explore Our Services
+              Explore
             </Button>
           </Link>
           <Link href="/contact-us">
-            <Button className="text-lg px-8 py-4 bg-blue-400 hover:bg-blue-500 text-black rounded-2xl shadow-lg m-4">
-              Get a Free Consultation
+            <Button variant="outline" className="outline text-lg px-8 py-4 text-blue-400 hover:text-blue-500  border-2 border-blue-500 rounded-2xl shadow-lg m-4" >
+              Consult
             </Button>
           </Link>
           </div>
@@ -42,106 +43,157 @@ function Home() {
         <Globe className="top-18 "  />
       </section>
       <section className="hero-section p-16">
-  <div className="max-w-5xl mx-auto px-6 text-center">
-    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-      Who We Are
-    </h2>
-    <p className="text-lg md:text-xl text-gray-700 mb-8">
-      We are a tech startup dedicated to building powerful software solutions that transform businesses. From intuitive web platforms to enterprise-grade tools, we specialize in scalable and future-ready products.
+  <div className="max-w-7xl mx-auto px-6 text-space-between ">
+    <div className="grid place-content-between grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="flex-initial m-3 y-5 mr-12">
+        {/* <p>Innovate</p> */}
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 flex-initial">
+        Who We Are
+      </h2>
+      </div>
+    <p className="text-lg md:text-xl text-gray-700 mb-8 flex-auto max-w-xl">
+      We are a tech startup dedicated to crafting powerful software solutions that drive business transformation. Our focus is on developing intuitive web platforms, enterprise tools, and scalable architectures that prepare you for the future. With a commitment to excellence, we ensure our solutions align with your unique vision.
     </p>
+    </div>
     <div>
    
     </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6  max-w-4xl mx-auto sm:rounded-3xl p-8">
-      <div className="bg-gray-100 shadow-md rounded-lg p-12 text-center">
-        <span className="text-green-500 text-3xl mb-4 inline-block">✅</span>
-        <h3 className="text-lg font-semibold text-gray-800">Client-Centric Approach</h3>
-      </div>
-      <div className="bg-gray-100 shadow-md rounded-lg p-12 text-center">
-        <span className="text-green-500 text-3xl mb-4 inline-block">✅</span>
-        <h3 className="text-lg font-semibold text-gray-800">Agile Development</h3>
-      </div>
-      <div className="bg-gray-100 shadow-md rounded-lg p-12 text-center">
-        <span className="text-green-500 text-3xl mb-4 inline-block">✅</span>
-        <h3 className="text-lg font-semibold text-gray-800">Scalable Architecture</h3>
-      </div>
-      <div className="bg-gray-100 shadow-md rounded-lg p-12 text-center">
-        <span className="text-green-500 text-3xl mb-4 inline-block">✅</span>
-        <h3 className="text-lg font-semibold text-gray-800">Premium UI/UX Design</h3>
-      </div>
+    <div className=" mx-auto sm:rounded-3xl">
+    <Image src="/vector_trixter.jpg" 
+    alt="Vector" 
+    width={1280} 
+    height={723} 
+    className="mx-auto mb-6 rounded-2xl" />
+      
     </div>
   </div>
 </section>
 <section className="hero-section p-16 bg-gradient-to-br from-white to-blue-50">
-  <div className="max-w-5xl mx-auto px-6 text-center">
-    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-      What We Do
+  <div className="max-w-7xl mx-auto px-6 text-center items-center">
+    <div className="items-center flex justify-center mb-6">
+      <h2 className="text-4xl max-w-5xl md:text-5xl font-bold mb-6 text-gray-900 ">
+      Our Core Values Drive Success and Innovation in Every Project we Undertake
     </h2>
+    </div>
     <p className="text-lg md:text-xl text-gray-700 mb-8">
-      Explore our wide range of services designed to empower your business.
+      At Trixtern, we believe in the power of innovation, trust, and excellence. Our values shape our approach to every project, ensuring we deliver solutions that not only meet but exceed expectations.
     </p>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
       <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
-        <span className="text-blue-500 text-4xl mb-8 inline-block">💻</span>
-        <h3 className="text-xl font-semibold text-gray-800">Custom Web Development</h3>
+        <span className="text-blue-500 text-4xl mb-8 inline-block">🤝</span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">Why Our Values Matter to Your Business Growth and Efficiency</h3>
+        <p className="text-sm">At trixtern, we belive in values that foster collaboration, creativity and excellence.</p>
       </div>
       <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
-        <span className="text-blue-500 text-4xl mb-8 inline-block">📱</span>
-        <h3 className="text-xl font-semibold text-gray-800">Mobile App Development</h3>
+        <span className="text-blue-500 text-4xl mb-8 inline-block">🎯</span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">Client-Centric Approach: Your Needs Are Our Top Priority in Every Solution</h3>
+        <p>We Prioritize your goals to ensure tailored solutions that truly resonate.</p>
       </div>
       <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
         <span className="text-blue-500 text-4xl mb-8 inline-block">🧠</span>
-        <h3 className="text-xl font-semibold text-gray-800">AI & Automation Solutions</h3>
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">Agile Developement: Adapting Quickly to Changes for optimal Results</h3>
+        <p>Our agile methodology ensures we stay responsive to your evolving needs.</p>
       </div>
-      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
-        <span className="text-blue-500 text-4xl mb-8 inline-block">🌐</span>
-        <h3 className="text-xl font-semibold text-gray-800">Enterprise Workflow Tools</h3>
-      </div>
-      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
-        <span className="text-blue-500 text-4xl mb-8 inline-block">📈</span>
-        <h3 className="text-xl font-semibold text-gray-800">Business Intelligence & Analytics</h3>
-      </div>
-      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
-        <span className="text-blue-500 text-4xl mb-8 inline-block">🔐</span>
-        <h3 className="text-xl font-semibold text-gray-800">Cybersecurity & Cloud Integration</h3>
-      </div>
+      
     </div>
   </div>
 </section>
-<section className="hero-section p-16 bg-gradient-to-br from-blue-50 to-white">
-  <div className="max-w-5xl mx-auto px-6 text-center">
-    <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+<section className="hero-section p-16 bg-gradient-to-br from-white to-blue-50">
+  <div className="max-w-7xl mx-auto px-6 text-center items-center">
+    {/* <p className="mb-8 font-semibold">Services</p> */}
+    <div className="items-center flex justify-center mb-6">
+      <h2 className="text-4xl max-w-5xl md:text-5xl font-bold mb-6 text-gray-900 ">
+      What We Do
+    </h2>
+    </div>
+    <p className="text-lg md:text-xl text-gray-700 mb-8">
+      Explore a weide range of services designed to empower your businesses. From web development to enterprise and AI solutions, we have you covered.
+    </p>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
+        <span className="text-blue-500 text-4xl mb-8 inline-block">
+          <Image
+        src={"/Customwebdevelopment.png"}
+        alt="Custom Web Development"
+        width={1280} 
+        height={723} 
+        className="mx-auto mb-4 rounded-lg"
+        />
+        </span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">Custom web Development</h3>
+        <p className="text-sm">
+          Tailored web solutions to elevate your online presence.
+        </p>
+      </div>
+      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
+        <span className="text-blue-500 text-4xl mb-8 inline-block">
+          <Image
+        src={"/Mobileappdevelopment.png"}
+        alt="Custom Web Development"
+        width={1280} 
+        height={723} 
+        className="mx-auto mb-4 rounded-lg"
+        />
+        </span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">Mobile App Development</h3>
+        <p>Innovative mobiles applications that engage your users.</p>
+      </div>
+      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
+        <span className="text-blue-500 text-4xl mb-8 inline-block">
+          <Image
+        src={"/Ai&Automation.png"}
+        alt="Custom Web Development"
+        width={1280} 
+        height={723} 
+        className="mx-auto mb-4 rounded-lg"
+        />
+        </span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">AI & Automation Solutions</h3>
+        <p>Leverage AI to streamline processes and enhance productivity.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section className="hero-section p-16 bg-gradient-to-br from-blue-50 to-white flex-col items-center justify-center">
+  <div className="flex flex-row max-w-7xl mx-auto px-6 text-center items-center justify-between">
+    <div className=" max-w-9xl mx-auto px-6 text-left flex-col items-center justify-center">
+    <div>
+      <h2 className="text-4xl max-w-xl md:text-5xl font-bold mb-6 text-gray-900">
       Why Businesses Trust Trixtern
     </h2>
     <p className="text-lg md:text-xl text-gray-700 mb-8">
-      Discover why we are the preferred choice for businesses worldwide.
+      At Trixtern, we prioritize your success with innovative solitions. Our commitment to quality and transparency sets us apart.
     </p>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
+    </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto flex-col items-center justify-center text-left">
+      <div className="bg-white shadow-md rounded-lg p-12 transform transition-transform hover:scale-105">
         <span className="text-blue-500 text-4xl mb-4 inline-block">🚀</span>
-        <h3 className="text-lg font-semibold text-gray-800">Fast Delivery</h3>
+        <h3 className="text-lg font-semibold text-gray-800">Proven Reliability</h3>
+        <p>Our clients appreciate our dedication to delivering results on time and within budget.</p>
       </div>
-      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
-        <span className="text-blue-500 text-4xl mb-4 inline-block">🎨</span>
-        <h3 className="text-lg font-semibold text-gray-800">Premium Design</h3>
-      </div>
-      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
-        <span className="text-blue-500 text-4xl mb-4 inline-block">⚙️</span>
-        <h3 className="text-lg font-semibold text-gray-800">Robust Architecture</h3>
-      </div>
-      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
-        <span className="text-blue-500 text-4xl mb-4 inline-block">🤝</span>
-        <h3 className="text-lg font-semibold text-gray-800">Long-Term Support</h3>
-      </div>
-      <div className="bg-white shadow-md rounded-lg p-12 text-center transform transition-transform hover:scale-105">
-        <span className="text-blue-500 text-4xl mb-4 inline-block">📊</span>
-        <h3 className="text-lg font-semibold text-gray-800">Transparent Workflow</h3>
+      <div className="bg-white shadow-md rounded-lg p-12  transform transition-transform hover:scale-105">
+        <span className="text-blue-500 text-4xl mb-4 inline-block">💡</span>
+        <h3 className="text-lg font-semibold text-gray-800">Expert Support</h3>
+        <p>We provide ongoing assistance to ensure your solutions evolve with your business needs.</p>
       </div>
     </div>
-    <blockquote className="mt-12 bg-gray-100 rounded-lg p-6 italic text-gray-700 text-lg max-w-3xl mx-auto">
+    
+  </div>
+    <div className="basis-150 mx-auto px-6 text-center">
+      <Image
+        src={"/trust.jpg"}
+        alt="Custom Web Development"
+        width={1280} 
+        height={723} 
+        className="mx-auto mb-4 rounded-lg"
+        />
+    </div>
+  </div>
+  <blockquote className="mt-12 bg-gray-100 rounded-lg p-6 italic text-gray-700 text-lg max-w-3xl mx-auto">
       “Innovation and trust are at the heart of everything we build.”
     </blockquote>
-  </div>
 </section>
 <section className="hero-section p-16 bg-gradient-to-br from-white to-gray-50">
   <div className="max-w-5xl mx-auto px-6 text-center">
@@ -170,30 +222,29 @@ function Home() {
   </div>
 </section>
 <section className="hero-section p-16 bg-gradient-to-br from-blue-100 to-purple-100">
-  <div className="max-w-5xl mx-auto px-6 text-center">
+  <div className="max-w-7xl mx-auto px-6 text-center flex justify-around items-center">
+    <div className="max-w-5xl mx-auto px-6 text-left">
     <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
       Ready to Transform Your Business?
     </h2>
     <p className="text-lg md:text-xl text-gray-700 mb-8">
-      Let&apos;s build something incredible together. Whether it&apos;s an app, a website, or an enterprise tool – we&apos;ve got your back.
+      Let&apos;s build something incredible together. <br></br> Whether it&apos;s an app, a website, or an enterprise tool – we&apos;ve got your back.
     </p>
-    <div className="flex flex-col sm:flex-row justify-center gap-4">
+    
+  </div>
+  <div className="flex flex-col sm:flex-row justify-center gap-4">
       <Link href="https://calendly.com/lanzkrish/30min">
         <Button className="text-lg px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-2xl shadow-lg">
           Book a Call
         </Button>
       </Link>
-      {/* <Link href="/get-started">
-        <Button className="text-lg px-8 py-4  bg-blue-500 hover:bg-blue-600 text-white rounded-2xl shadow-lg">
-          Get Started
-        </Button>
-      </Link> */}
       <Link href="/contact-us">
-        <Button className="text-lg px-8 py-4  bg-blue-500 hover:bg-blue-600 text-white rounded-2xl shadow-lg">
+        <Button variant="outline" className="text-lg px-8 py-4   hover:text-blue-500 text-blue-400 rounded-2xl shadow-lg">
           Contact Us
         </Button>
       </Link>
     </div>
+    
   </div>
 </section>
     </div>
