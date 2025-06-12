@@ -12,7 +12,7 @@ function ContactUs() {
       />
 
       {/* Contact Form Section */}
-      <section className="px-4 sm:px-6 md:px-16 pb-16">
+      <section className="px-4 sm:px-6 md:px-16 pb-16 max-w-7xl mx-auto">
         <div className="flex flex-col items-center justify-center rounded-lg p-6 sm:p-8 bg-gray-100">
           <form
             action="https://api.web3forms.com/submit"

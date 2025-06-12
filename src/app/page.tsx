@@ -26,17 +26,18 @@ function Home() {
           <p className="text-base sm:text-xl md:text-2xl mb-6 sm:mb-8">
             We help you streamline workflows and grow with cutting-edge software tailored to your vision.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-6">
+          
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full">
             <Link href="/services">
-              <Button className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 bg-blue-400 hover:bg-blue-500 text-black rounded-2xl shadow-lg">
+              <Button className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-2xl shadow-lg w-full sm:w-auto">
                 Explore
               </Button>
             </Link>
-            <Link href="/contact-us">
-              <Button variant="outline" className="outline text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 text-blue-400 hover:text-blue-500 border-2 border-blue-500 rounded-2xl shadow-lg">
+            <a href="https://calendly.com/lanzkrish/30min" target="_blank" rel="noopener noreferrer" > 
+              <Button variant="outline" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 hover:text-blue-500 text-blue-400 rounded-2xl shadow-lg w-full sm:w-auto">
                 Consult
               </Button>
-            </Link>
+            </a>
           </div>
         </motion.div>
         <Globe className="top-18" />
@@ -235,11 +236,11 @@ function Home() {
             Let&apos;s build something incredible together. <br /> Whether it&apos;s an app, a website, or an enterprise tool – we&apos;ve got your back.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 w-full">
-            <Link href="https://calendly.com/lanzkrish/30min">
+            <a href="https://calendly.com/lanzkrish/30min" target="_blank" rel="noopener noreferrer" > 
               <Button className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-2xl shadow-lg w-full sm:w-auto">
                 Book a Call
               </Button>
-            </Link>
+            </a>
             <Link href="/contact-us">
               <Button variant="outline" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 hover:text-blue-500 text-blue-400 rounded-2xl shadow-lg w-full sm:w-auto">
                 Contact Us
