@@ -1,6 +1,8 @@
 "use client";
 
 import PageHeader from "@/components/ui/page-header";
+import { Button } from "@/components/ui/button";
+import React from "react";
 
 function ContactUs() {
   return (
@@ -129,6 +131,11 @@ function ContactUs() {
               >
                 Send Message
               </button>
+              <a href="https://calendly.com/lanzkrish/30min" target="_blank" rel="noopener noreferrer" > 
+                  <Button variant="outline" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 hover:text-blue-500 text-blue-400 rounded-2xl shadow-lg w-full sm:w-auto">
+                    Consult
+                  </Button>
+              </a>
             </div>
           </form>
         </div>

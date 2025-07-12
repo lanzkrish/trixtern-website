@@ -213,14 +213,14 @@ function Home() {
               <p className="text-gray-700 italic mb-2 sm:mb-4 text-sm sm:text-base">
                 “Trixtern transformed our entire digital process. Efficient, smart, and always supportive.”
               </p>
-              <h3 className="text-base sm:text-lg font-semibold text-gray-800">— Rahul M., CEO, XCorp</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-800">— Ronak Mohanty, Director, Tarutra Robotics & Automation</h3>
             </div>
             <div className="bg-white shadow-md rounded-lg p-6 sm:p-10 md:p-12 text-center">
               <p className="text-yellow-500 text-xl sm:text-2xl mb-2 sm:mb-4">⭐⭐⭐⭐⭐</p>
               <p className="text-gray-700 italic mb-2 sm:mb-4 text-sm sm:text-base">
                 “Professional team with brilliant solutions. Highly recommended.”
               </p>
-              <h3 className="text-base sm:text-lg font-semibold text-gray-800">— Meena S., Project Manager</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-gray-800">— Siten Sahoo, Director, Svadhishthana Green Energy</h3>
             </div>
           </div>
         </div>
