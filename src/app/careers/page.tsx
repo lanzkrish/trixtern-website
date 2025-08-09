@@ -40,11 +40,18 @@ export default function CareersPage() {
           {jobs.map((position, idx) => (
             <Card key={idx} className="rounded-xl shadow-md">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{position.title}</h3>
+                <div className="flex items-center justify-between mb-2">
+                  <h3 className="text-xl font-semibold">{position.title}</h3>
+                  {position.urgency === "Urgent" && (
+                    <span className="ml-2 px-3 py-1 text-xs font-bold text-red-600 bg-red-100 rounded-full">
+                      Hiring Currently
+                    </span>
+                  )}
+                </div>
                 <p className="text-sm text-gray-500 mb-4">{position.location}</p>
                 <p className="text-gray-600 mb-6">{position.bio}</p>
                 <Link href={`/careers/job-description/${position.id}`}>
-                  <Button variant="outline" className="w-full">
+                  <Button variant="primary" className="w-full">
                     Apply Now
                   </Button>
                 </Link>

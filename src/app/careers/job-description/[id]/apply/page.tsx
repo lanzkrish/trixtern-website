@@ -31,7 +31,7 @@ export default function JobApplicationPage() {
   }
 
   return (
-    <div className="bg-gray-50 text-gray-900 mx-4 sm:mx-6 md:mx-12">
+    <div className=" max-w-5xl mx-auto bg-gray-50 text-gray-900  ">
       {/* Header Section */}
       <div className="text-center py-6 sm:py-10">
         <h1 className="text-2xl sm:text-3xl font-bold">{`Apply for ${job.title}`}</h1>
