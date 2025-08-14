@@ -11,14 +11,14 @@ const projects = [
     title: "Tarutra Robotics Portal",
     description:
       "A robust web platform for Tarutra Robotics & Automation, streamlining their client onboarding, project management, and internal workflows. Enabled real-time collaboration and improved operational efficiency.",
-    image: "/project-tarutra.jpg",
+    image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSd5YLY9DikGQBmTUHxVFuZNnR8tKJzlrXWdAEM",
     link: "https://tarutrarobotics.com/",
   },
   {
     title: "Svadhishthana Green Energy Dashboard",
     description:
       "Developed a custom analytics dashboard for Svadhishthana Green Energy, empowering them to monitor energy production, optimize resources, and provide transparent reporting to stakeholders.",
-    image: "/project-svadhishthana.jpg",
+    image: "https://drive.google.com/file/d/1JPEzm4gSL80CxAdZoDXz6vb9wck9wJRy/view?usp=sharing",
     link: "https://svadhishthana.com",
   },
   {
@@ -27,6 +27,13 @@ const projects = [
       "Built an AI-powered automation suite for a retail client, automating inventory management, sales analytics, and customer engagement, resulting in significant cost savings and improved customer satisfaction.",
     image: "/project-retailai.jpg",
     link: "#",
+  },
+  {
+    title: "PC Quicker",
+    description:
+      "PC Quicker offers fast, reliable PC and laptop repair services right at your doorstep. From hardware issues to software troubleshooting, our expert technicians ensure your devices run smoothly, saving you time and hassle with professional, on-site support.",
+    image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdRbWp1GrKhpGVqx1rNJL0WkZPUEDlem6ts4M5",
+    link: "https://pcquicker.com/",
   },
   // Add more projects as needed
 ];
