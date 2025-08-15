@@ -159,3 +159,9 @@
 .scale-120 {
   transform: scale(1.9);
 }
+.flip-360 {
+  transition: transform 0.5s;
+}
+.flip-360:hover {
+  transform: rotateY(180deg) scale(1.1);
+}
