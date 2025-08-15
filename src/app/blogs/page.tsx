@@ -65,7 +65,7 @@ const BlogsPage: React.FC = () => {
   const olderPosts = sortedBlogs.slice(1);
 
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="bg-black text-gray-200">
       {/* Header Section */}
       <PageHeader title="Blogs & Insights" description="Stay updated with the latest trends, insights, and innovations in AI, FinTech, and beyond." />
 
@@ -95,7 +95,7 @@ const BlogsPage: React.FC = () => {
       </section>
 
       {/* Older Posts */}
-      <section className="py-12 px-6 bg-gray-100">
+      <section className="py-12 px-6 bg-gradient-to-tr from-gray-900 to-gray-200">
         <h2 className="text-3xl font-bold text-center mb-8">Older Blogs</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {olderPosts.map((post) => (

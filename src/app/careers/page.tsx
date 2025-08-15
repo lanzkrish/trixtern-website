@@ -18,15 +18,15 @@ export default function CareersPage() {
 
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden text-white text-center">
-        <video poster="/videos/preview/3254011-uhd_1280_720_still.png"
+        <video poster="https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdiaNbG7x37NpskaPHg9YKATLnrCU8czIuBS2E"
           className="absolute top-0 left-0 w-full h-full object-cover"
           autoPlay
           loop
           muted
           playsInline
         >
-          <source src="/videos/3254011-uhd_1280_720_25fps.mov" type="video/mp4" />
-          Your browser does not support the video tag.
+          <source src="https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSd28QZfe3AXvWige0pzkncFb4QBZMwqxR9DYNL" type="video/mp4" />
+          code 3254011-uhd_1280_720_25fpsYour browser does not support the video tag.
         </video>
         <div className="relative z-10 flex flex-col justify-center items-center h-full bg-black/50">
           <h2 className="text-4xl font-bold mb-4">Be a part of the next Revolution</h2>

@@ -154,3 +154,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Add to your global CSS */
+.scale-120 {
+  transform: scale(1.9);
+}

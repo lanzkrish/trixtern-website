@@ -59,7 +59,7 @@ function Home() {
             </div>
             <div className="mx-auto sm:rounded-3xl w-full max-w-xxxl">
               <Image
-                src="/vector_trixter.jpg"
+                src="https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdjwiHfOSrdb2N6D4zYUheqXyBliK8WpaLJQ1f"
                 alt="Vector"
                 width={1920}
                 height={1080}
@@ -122,7 +122,7 @@ function Home() {
             <div className={`${glassClass} p-6 sm:p-10 md:p-12 text-center transform transition-transform hover:scale-105`}>
               <span className="block mb-4 sm:mb-8">
                 <Image
-                  src={"/Customwebdevelopment.png"}
+                  src={"https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSd5IgNpFikGQBmTUHxVFuZNnR8tKJzlrXWdAEM"}
                   alt="Custom Web Development"
                   width={400}
                   height={225}
@@ -135,7 +135,7 @@ function Home() {
             <div className={`${glassClass} p-6 sm:p-10 md:p-12 text-center transform transition-transform hover:scale-105`}>
               <span className="block mb-4 sm:mb-8">
                 <Image
-                  src={"/Mobileappdevelopment.png"}
+                  src={"https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdZC9bBace8YJ6lXAx5szoKpBm9ivIyc4wrhuT"}
                   alt="Mobile App Development"
                   width={400}
                   height={225}
@@ -148,7 +148,7 @@ function Home() {
             <div className={`${glassClass} p-6 sm:p-10 md:p-12 text-center transform transition-transform hover:scale-105`}>
               <span className="block mb-4 sm:mb-8">
                 <Image
-                  src={"/Ai&Automation.png"}
+                  src={"https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSd8RpENOfxkCHdmGFKUnLfwa2ADpiY4u0JIrlo"}
                   alt="AI & Automation Solutions"
                   width={400}
                   height={225}
@@ -187,7 +187,7 @@ function Home() {
           </div>
           <div className="w-full lg:w-1/2 flex justify-center items-center">
             <Image
-              src={"/trust.jpg"}
+              src={"https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdVKQaYX9rf9LS1eXn3bKCcOMYytiQzAUG04wx"}
               alt="Trust"
               width={400}
               height={225}
@@ -201,7 +201,7 @@ function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="hero-section min-h-screen flex flex-col items-center justify-center p-6 sm:p-10 md:p-16 bg-white">
+      <section className="hero-section min-h-screen flex flex-col items-center justify-center p-6 sm:p-10 md:p-16 bg-[url('https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSd2zTkjmo3AXvWige0pzkncFb4QBZMwqxR9DYN')] bg-cover bg-center bg-no-repeat">
         <div className="max-w-5xl mx-auto px-2 sm:px-6 text-center flex flex-col items-center justify-center w-full">
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-black">
             What Our Clients Say
