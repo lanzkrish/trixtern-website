@@ -1,3 +1,5 @@
+import { Marquee } from "@/components/magicui/marquee";
+import { cn } from "@/lib/utils";
 import React from "react";
 
 const slugs = [
@@ -109,10 +111,8 @@ const simpleIconsMap: Record<string, string> = {
 const customIconsMap: Record<string, string> = {
   blockchain: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdv1mx6yM4EO0BnrF7zU9qespT1ykulHCNLwDj",
   metamask: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdCULtoojOfaGy8RJTBWVXd9boUtAmix4l0Mp1",
-  // ...other custom icons if needed
 };
 
-// Add documentation URLs for each technology
 const docsMap: Record<string, string> = {
   javascript: "https://developer.mozilla.org/docs/Web/JavaScript",
   typescript: "https://www.typescriptlang.org/docs/",
@@ -202,52 +202,61 @@ const docsMap: Record<string, string> = {
   serverless: "https://www.serverless.com/framework/docs/",
 };
 
-const TechWeUse: React.FC = () => {
-  const images = slugs.map((slug) => {
-    if (customIconsMap[slug]) {
-      return {
-        src: customIconsMap[slug],
-        alt: slug,
-      };
-    }
-    if (simpleIconsMap[slug]) {
-      return {
-        src: `https://cdn.simpleicons.org/${simpleIconsMap[slug]}`,
-        alt: slug,
-      };
-    }
-    return {
-      src: `https://skillicons.dev/icons?i=${slug}`,
-      alt: slug,
-    };
-  });
+const ROW_COUNT = 4; // Change this to the number of rows you want
+const ROW_SLUGS = Array.from({ length: ROW_COUNT }, (_, i) =>
+  slugs.filter((_, idx) => Math.floor(idx / Math.ceil(slugs.length / ROW_COUNT)) === i)
+);
 
+const TechSlug = ({ slug }: { slug: string }) => {
+  const img =
+    customIconsMap[slug]
+      ? { src: customIconsMap[slug], alt: slug }
+      : simpleIconsMap[slug]
+      ? { src: `https://cdn.simpleicons.org/${simpleIconsMap[slug]}`, alt: slug }
+      : { src: `https://skillicons.dev/icons?i=${slug}`, alt: slug };
   return (
-    <div className="relative flex size-full items-center justify-center overflow-hidden">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 p-4 sm:p-8">
-        {images.map((img) => (
-          <div key={img.alt} className="flex flex-col items-center">
-            <a
-              href={docsMap[img.alt] || "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="focus:outline-none"
-            >
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="w-12 h-12 sm:w-16 sm:h-16 object-contain mb-2 flip-360"
-                loading="lazy"
-              />
-            </a>
-            <span className="text-xs text-center capitalize">
-              {img.alt.replace(/js$/, ".js").replace(/-/g, " ")}
-            </span>
-          </div>
-        ))}
-      </div>
-    </div>
+    <a
+      href={docsMap[img.alt] || "#"}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(
+        "focus:outline-none flex flex-col items-center px-2"
+      )}
+      style={{ width: "64px" }}
+    >
+      <img
+        src={img.src}
+        alt={img.alt}
+        className="w-12 h-12 object-contain mb-1"
+        loading="lazy"
+      />
+      <span className="text-xs text-center capitalize">
+        {img.alt.replace(/js$/, ".js").replace(/-/g, " ")}
+      </span>
+    </a>
   );
 };
+
+export function TechWeUse() {
+  return (
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden h-[320px] bg-gray-900">
+      {ROW_SLUGS.map((row, idx) => (
+        <Marquee
+          key={idx}
+          reverse={idx % 2 === 1}
+          pauseOnHover
+          className="[--duration:30s] py-2"
+        >
+          {row.map((slug) => (
+            <TechSlug key={slug} slug={slug} />
+          ))}
+        </Marquee>
+      ))}
+      {/* Optional: gradient overlays for fade effect */}
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-gray-900 "></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-gray-900"></div>
+    </div>
+  );
+}
 
 export default TechWeUse;

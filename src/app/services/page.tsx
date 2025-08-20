@@ -64,12 +64,12 @@ const ServicesPage: React.FC = () => {
         </div>
       </section>
       <section className="bg-white text-gray-100">
-      <div className="py-20 px-6 bg-gradient-to-tr from-gray-900 to-gray-200">
-      <h2 className="text-3xl font-bold text-center mb-14 text-gray-800">
+      <div className="py-20 px-6 bg-gray-900">
+      <h2 className="text-3xl font-bold text-center mb-7 text-gray-200">
           What We Use
         </h2>
 
-        <div className="text-center text-gray-100">
+        <div className="text-center text-gray-100 mb-12">
 
           We utilize cutting-edge technologies like AI, Blockchain, and Cloud Computing to deliver exceptional results.
         </div>
