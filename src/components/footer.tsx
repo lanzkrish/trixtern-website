@@ -30,31 +30,31 @@ export default function Footer() {
         {/* Links Section */}
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
           {[
-            {
-              title: "Product",
-              links: [
-                // { name: "Interncify", href: "https://interncify.com" },
-                { name: "Features", href: "#" },
-                { name: "Integrations", href: "#" },
-                { name: "Pricing", href: "#" },
-                { name: "FAQ", href: "#" },
-              ],
-            },
+            // {
+            //   title: "Product",
+            //   links: [
+            //     // { name: "Interncify", href: "https://interncify.com" },
+            //     { name: "Features", href: "#" },
+            //     { name: "Integrations", href: "#" },
+            //     { name: "Pricing", href: "#" },
+            //     { name: "FAQ", href: "#" },
+            //   ],
+            // },
             {
               title: "Company",
               links: [
-                { name: "Privacy", href: "/privacy&policy" },
+                { name: "Privacy Policy", href: "/privacy&policy" },
                 { name: "Terms of Service", href: "/terms-of-service" },
               ],
             },
-            {
-              title: "Developers",
-              links: [
-                { name: "Public API", href: "#" },
-                { name: "Documentation", href: "#" },
-                { name: "Guides", href: "#" },
-              ],
-            },
+            // {
+            //   title: "Developers",
+            //   links: [
+            //     { name: "Public API", href: "#" },
+            //     { name: "Documentation", href: "#" },
+            //     { name: "Guides", href: "#" },
+            //   ],
+            // },
             {
               title: "Social Media",
               links: [

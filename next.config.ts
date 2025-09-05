@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   images: {
-    domains: ['github.com', 's3.amazonaws.com','tarutrarobotics.com','eu0yhcfg0e.ufs.sh'],
+    domains: ['github.com', 's3.amazonaws.com','tarutrarobotics.com','eu0yhcfg0e.ufs.sh','skillicons.dev','cdn.simpleicons.org'],
   },
 };
 
