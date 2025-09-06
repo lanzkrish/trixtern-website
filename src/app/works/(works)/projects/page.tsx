@@ -21,13 +21,13 @@ const projects = [
     image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdKzIMu9lHcSwb1zemn8g7XJP6a3290hOuIxrk",
     link: "https://pcquicker.com/",
   },
-  {
-    title: "Svadhishthana Green Energy",
-    description:
-      "Svadhishthana Green Energy provides renewable energy solutions like solar panels, hybrid harvesters, and storage systems. Focused on sustainability, innovation, and education, it delivers reliable, affordable, and customizable products to promote a cleaner, brighter future.",
-    image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSderFSyVEOyPV901jHK78Rzw6423fANCIqthUb",
-    link: "https://svadhishthana.com",
-  },
+  // {
+  //   title: "Svadhishthana Green Energy",
+  //   description:
+  //     "Svadhishthana Green Energy provides renewable energy solutions like solar panels, hybrid harvesters, and storage systems. Focused on sustainability, innovation, and education, it delivers reliable, affordable, and customizable products to promote a cleaner, brighter future.",
+  //   image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSderFSyVEOyPV901jHK78Rzw6423fANCIqthUb",
+  //   link: "https://svadhishthana.com",
+  // },
 
   {
     title: "Tooros",
@@ -67,7 +67,7 @@ const projects = [
   {
     title: "Havana Club",
     description:
-      "PC Quicker offers fast, reliable PC and laptop repair services right at your doorstep. From hardware issues to software troubleshooting, our expert technicians ensure your devices run smoothly, saving you time and hassle with professional, on-site support.",
+      "Havana Club celebrates Cuban heritage through community workshops, cultural collaboration, and master rum craftsmanship. Guided by generations of Maestros, it creates exceptional rums that embody Cuba’s land, tradition, and passion, inspiring creativity and excellence worldwide.",
     image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdLr2nDNerJhEVl34f7b1pMKtnuSWodYw652Xz",
     link: "https://havana-club.com/en/",
   },
