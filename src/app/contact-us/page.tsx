@@ -3,6 +3,7 @@
 import PageHeader from "@/components/ui/page-header";
 import { Button } from "@/components/ui/button";
 import React from "react";
+import Link from "next/link";
 
 function ContactUs() {
   return (
@@ -124,18 +125,18 @@ function ContactUs() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               ></textarea>
             </div>
-            <div className="mt-6 text-center">
+            <div className="mt-6 text-center ">
               <button
                 type="submit"
-                className="w-full md:w-auto px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mr-6 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-lg w-full sm:w-auto bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
                 Send Message
               </button>
-              <a href="https://calendly.com/lanzkrish/30min" target="_blank" rel="noopener noreferrer" > 
-                  <Button variant="outline" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 hover:text-blue-500 text-blue-400 rounded-2xl shadow-lg w-full sm:w-auto">
+              <Link href="https://calendly.com/lanzkrish/30min" target="_blank" rel="noopener noreferrer" > 
+                  <Button variant="outline" className=" ml-6text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 hover:text-blue-500 text-gray-900  rounded-2xl shadow-lg w-full sm:w-auto">
                     Consult
                   </Button>
-              </a>
+              </Link>
             </div>
           </form>
         </div>
