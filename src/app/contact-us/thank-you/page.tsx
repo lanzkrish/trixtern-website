@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const ThankYou: React.FC = () => {
   const [countdown, setCountdown] = useState(5); // Countdown timer starts at 5 seconds
@@ -49,12 +50,12 @@ const ThankYou: React.FC = () => {
             In the meantime, feel free to explore our website or check out our latest blogs for more insights.
           </p>
           
-          <a
+          <Link
             href="/blogs"
             className="mt-6 px-6 py-3 bg-gray-100 text-blue-600 border-blue-600 font-medium rounded-md shadow-md ring-2 ring-blue-500 hover:bg-blue-600 hover:text-gray-100 hover:ring-blue-700 focus:outline-blue-700 focus:ring-2 focus:ring-blue-900"
           >
             Go to Blogs
-          </a>
+          </Link>
           
         </div>
       </section>

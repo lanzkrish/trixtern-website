@@ -7,6 +7,10 @@ import Footer from "@/components/footer";
 
 import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
+import ReactLenis from "lenis/react";
+
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -29,6 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ReactLenis/>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
