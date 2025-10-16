@@ -4,7 +4,7 @@ import clsx from "clsx";
 interface ButtonProps {
   children: React.ReactNode;
   className?: string;
-  variant?: "primary" | "outline";
+  variant?: "primary" | "outline" | "disabled";
   onClick?: () => void;
   disabled?: boolean;
 }
@@ -22,6 +22,7 @@ export const Button: React.FC<ButtonProps> = ({
     primary: "bg-blue-600 text-white hover:bg-blue-800 focus:ring-blue-500 hover:cursor-pointer",
     outline:
       "border border-blue-600 text-gray-200 hover:bg-black hover:text-blue-400   focus:ring-blue-500 hover:cursor-pointer",
+    disabled: "bg-gray-400 text-gray-200 cursor-not-allowed",
   };
 
   return (

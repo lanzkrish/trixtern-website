@@ -42,16 +42,32 @@ export default function CareersPage() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-2">
                   <h3 className="text-xl font-semibold">{position.title}</h3>
-                  {position.urgency === "Urgent" && (
+                  {position.urgency === "Urgent" ? (
                     <span className="ml-2 px-3 py-1 text-xs font-bold text-red-600 bg-red-100 rounded-full">
-                      Hiring Currently
+                      Actively Hiring
                     </span>
-                  )}
+                  ) : position.urgency === "required" ? (
+                    <span className="ml-2 px-3 py-1 text-xs font-bold text-blue-600 bg-blue-100 rounded-full">
+                      Hiring Open
+                    </span>
+                  ) : position.urgency === "none" ? (
+                    <span className="ml-2 px-3 py-1 text-xs font-bold text-gray-600 bg-gray-100 rounded-full">
+                      No Position Opened
+                    </span>
+                  ) : null}
                 </div>
                 <p className="text-sm text-gray-500 mb-4">{position.location}</p>
                 <p className="text-gray-600 mb-6">{position.bio}</p>
-                <Link href={`/careers/job-description/${position.id}`}>
-                  <Button variant="primary" className="w-full">
+                <Link
+                  href={`/careers/job-description/${position.id}`}
+                  className={position.urgency === "none" ? "pointer-events-none" : ""}
+                >
+                  <Button
+
+                    variant={position.urgency === "none" ? "disabled" : "primary"}
+                    className="w-full"
+                    disabled={position.urgency === "none"}
+                  >
                     Apply Now
                   </Button>
                 </Link>
