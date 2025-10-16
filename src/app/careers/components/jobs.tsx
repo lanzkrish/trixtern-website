@@ -41,6 +41,7 @@ export const jobs = [
     urgency: "none",
     location: "Bhubaneswar, India",
     bio: "Develop and maintain high-quality Android applications.",
+    joboverview: "We are seeking a passionate and skilled Android Developer to join our mobile development team. The ideal candidate will have a strong foundation in Kotlin or Java and a keen interest in building smooth, high-performance mobile applications. You will collaborate with designers, backend developers, and product managers to create engaging, user-friendly apps that delight our users.",
     description: "As an Android Developer, you will be responsible for designing, building, and maintaining Android applications. You will work closely with cross-functional teams to implement new features, fix bugs, and optimize app performance.",
     keyResponsibilities: [
       "Design, build, and maintain advanced Android applications using Kotlin or Java.",
@@ -77,6 +78,7 @@ export const jobs = [
     urgency: "none",
     location: "Bhubaneswar, India",
     bio: "Build and optimize iOS applications for performance and usability.",
+    joboverview: "We are looking for a talented and motivated iOS Developer to join our mobile team. The ideal candidate will be proficient in Swift and SwiftUI, with a strong desire to create intuitive, high-quality iOS applications. You will work closely with designers and backend engineers to implement seamless user experiences and bring innovative app ideas to life.",
     description: "As an iOS Developer, you will develop and maintain iOS applications, ensuring high performance and responsiveness. You will collaborate with designers and backend developers to deliver seamless user experiences.",
     keyResponsibilities: [
       "Develop and maintain high-performance iOS applications using Swift and SwiftUI.",
@@ -113,6 +115,7 @@ export const jobs = [
      urgency: "none",
     location: "Remote",
     bio: "Create and maintain responsive and scalable web applications.",
+    joboverview: "We are seeking an enthusiastic and skilled Web Developer to join our development team. The ideal candidate will have a solid understanding of frontend and/or full-stack web technologies and a passion for building responsive, high-performance web applications. You will work closely with designers and product teams to deliver websites and applications that are visually appealing, functional, and user-friendly.",
     description: "As a Web Developer, you will design, develop, and maintain web applications. You will ensure that the applications are responsive, scalable, and optimized for performance, while collaborating with designers and backend developers.",
     keyResponsibilities: [
       "Develop responsive and interactive web applications using modern JavaScript frameworks.",
@@ -149,6 +152,7 @@ export const jobs = [
      urgency: "none",
     location: "Bhubaneswar, India",
     bio: "Develop and deploy machine learning models to solve complex problems.",
+    joboverview: "We are looking for a highly motivated AI/ML Developer to join our data science and AI team. The ideal candidate will have strong foundational skills in machine learning, data analysis, and Python programming. You will collaborate with engineers and product managers to design, train, and deploy AI solutions that solve real-world problems and drive business innovation.",
     description: "As an AI/ML Developer, you will research, design, and implement machine learning models. You will work on data preprocessing, model training, and deployment to create intelligent solutions for real-world challenges.",
     keyResponsibilities: [
       "Develop, train, and evaluate machine learning and deep learning models for various use cases.",
@@ -185,6 +189,7 @@ export const jobs = [
      urgency: "required",
     location: "Remote",
     bio: "Create engaging and high-quality content for various platforms.",
+    joboverview: "We are seeking a creative and detail-oriented Content Writer to join our content and marketing team. The ideal candidate will have a passion for writing engaging, clear, and informative content that resonates with our audience. You will collaborate with designers, marketers, and product managers to produce high-quality content across blogs, websites, social media, and other digital channels.",
     description: "As a Content Writer, you will produce high-quality articles, blogs, and marketing materials. You will collaborate with the marketing team to ensure content aligns with brand voice and engages the target audience.",
     keyResponsibilities: [
       "Research, write, and edit engaging content for blogs, websites, and social media.",
