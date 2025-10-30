@@ -37,6 +37,19 @@ export default function JobDescriptionPage() {
       <p className="text-gray-600 mb-2">
         <strong>Location:</strong> {job.location}
       </p>
+
+      {/* Added: show duration and stipend when available */}
+      {job.duration && (
+        <p className="text-gray-700 mb-2">
+          <strong>Duration:</strong> {job.duration}
+        </p>
+      )}
+      {job.stipend && (
+        <p className="text-gray-700 mb-6">
+          <strong>Stipend:</strong> {job.stipend}
+        </p>
+      )}
+
       <p className="text-gray-700 mb-6">{job.description}</p>
       <h3 className="text-xl font-bold mb-2">Job Overview</h3>
       <p className="text-gray-700 mb-6">{job.joboverview}</p>

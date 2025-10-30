@@ -220,4 +220,79 @@ export const jobs = [
     ]
 
   },
+  {
+    id: 7,
+    title: "Digital Marketing Intern",
+    urgency: "Urgent",
+    location: "Remote/Work from Home",
+    bio: "Create engaging campaigns, content, and strategies to boost our digital presence.",
+    joboverview:
+      "We are looking for a proactive and creative Digital Marketing Intern to join our marketing team. This role is perfect for students and freshers (MBA/BBA or similar) who want hands-on experience in social media marketing, content creation, campaign management, and analytics. You'll work closely with our marketing leads to support day-to-day activities and learn practical skills that will accelerate your career.",
+    description:
+      "As a Digital Marketing Intern, you will assist in creating and scheduling social content, learning SEO fundamentals, helping manage campaigns, and preparing performance reports. You'll gain exposure to real-world marketing workflows and tools, contribute ideas, and receive mentorship from experienced marketers.",
+    keyResponsibilities: [
+      "Help create and schedule engaging social media content for Instagram, LinkedIn and Facebook.",
+      "Support content creation (copywriting, basic visuals) for posts and blogs.",
+      "Assist with basic on-page SEO and keyword research.",
+      "Help set up and monitor small campaigns and track performance.",
+      "Prepare weekly analytics and reporting dashboards to measure engagement and growth.",
+      "Collaborate with the marketing team to brainstorm content and campaign ideas.",
+      "Maintain content calendars and ensure timely publishing.",
+      "Respond to basic social interactions or flag for follow-up."
+    ],
+    requirements: [
+      "Good written and verbal communication skills.",
+      "Basic familiarity with social media platforms (Instagram, LinkedIn, Facebook).",
+      "Eagerness to learn, take feedback, and grow in a fast-paced startup environment.",
+      "Creative mindset with a willingness to experiment with content formats.",
+      "Currently pursuing or recently completed a degree (MBA/BBA or related) is a plus.",
+      "Basic understanding of analytics (Google Analytics or platform insights) is helpful but not mandatory."
+    ],
+    benefits: [
+      "Hands-on mentorship and real project experience.",
+      "Opportunity to build portfolio work and receive a reference/experience letter.",
+      "Flexible remote working and learning-focused environment.",
+      "Stipend according to performance (1st month unpaid).",
+      "Duration: 3-6 months with potential for extension or full-time conversion."
+    ],
+    duration: "3-6 months",
+    stipend: "According to performance (1st month unpaid)"
+  },
+  {
+    id: 8,
+    title: "Intern Graphic Designer",
+    urgency: "Urgent",
+    location: "Remote/Work from Home",
+    bio: "Design eye-catching visuals and brand assets for social media and marketing.",
+    joboverview:
+      "We are seeking a passionate and creative Graphic Design Intern to join our creative team. This role is ideal for students and freshers who want hands-on experience designing social media posts, marketing collateral, and branding assets. You will work closely with designers and marketers, receive mentorship, and build portfolio-ready work.",
+    description:
+      "As an Intern Graphic Designer, you'll contribute to designing social media creatives, marketing materials, and brand assets. You'll collaborate with the creative team to take briefs, iterate on designs, and prepare final files for publishing. This internship focuses on practical experience, feedback-driven growth, and opportunity to build a strong design portfolio.",
+    keyResponsibilities: [
+      "Design engaging social media posts, banners, and ad creatives for Instagram, LinkedIn, and Facebook.",
+      "Support branding projects: logos, style guides, and visual assets.",
+      "Create marketing materials such as brochures, flyers, and presentation slides.",
+      "Prepare and export production-ready assets for web and social platforms.",
+      "Work with the team to iterate on designs based on feedback.",
+      "Maintain organized design files and follow brand guidelines.",
+      "Assist in simple motion/animated assets or GIFs (optional)."
+    ],
+    requirements: [
+      "Working knowledge of Adobe Photoshop and Illustrator; Canva experience is a plus.",
+      "Strong visual sensibility and a creative mindset.",
+      "Basic understanding of typography, color theory, and layout.",
+      "Eagerness to learn, take feedback, and grow in a startup environment.",
+      "Portfolio or sample designs (student projects or personal work) preferred.",
+      "Good communication skills and ability to meet deadlines."
+    ],
+    benefits: [
+      "Mentorship and practical experience working on real marketing projects.",
+      "Opportunity to build a visible portfolio and get a reference letter.",
+      "Flexible remote working and learning-focused environment.",
+      "Stipend according to performance (1st month unpaid).",
+      "Duration: 3-6 months with potential for extension or full-time conversion."
+    ],
+    duration: "3-6 months",
+    stipend: "According to performance (1st month unpaid)"
+  }
 ];

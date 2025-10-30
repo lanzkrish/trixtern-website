@@ -8,6 +8,18 @@ import { jobs } from "@/app/careers/components/jobs";
 import Link from "next/link";
 
 export default function CareersPage() {
+  // sort jobs by urgency: "Urgent" -> "required" -> "none"
+  const urgencyOrder = { Urgent: 0, required: 1, none: 2 } as const;
+  const sortedJobs = React.useMemo(
+    () =>
+      [...jobs].sort(
+        (a, b) =>
+          (urgencyOrder[a.urgency as keyof typeof urgencyOrder] ?? 3) -
+          (urgencyOrder[b.urgency as keyof typeof urgencyOrder] ?? 3)
+      ),
+    []
+  );
+
   return (
     <div className="bg-white text-gray-900">
       {/* Page Header */}
@@ -29,7 +41,15 @@ export default function CareersPage() {
           code 3254011-uhd_1280_720_25fpsYour browser does not support the video tag.
         </video>
         <div className="relative z-10 flex flex-col justify-center items-center h-full bg-black/50">
-          <h2 className="text-4xl font-bold mb-4">Be a part of the next Revolution</h2>
+          <h2 className="text-4xl font-bold mb-4">Be a part of something big</h2>
+          <p className="text-lg mb-8">
+            We're on a mission to innovate and lead in the tech industry. Join us and make an impact.
+          </p>
+          <Link href="/contact">
+            <Button variant="primary" size="lg">
+              Get in Touch
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -37,7 +57,7 @@ export default function CareersPage() {
       <section className="py-20 px-6 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-14">Open Positions</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {jobs.map((position, idx) => (
+          {sortedJobs.map((position, idx) => (
             <Card key={idx} className="rounded-xl shadow-md">
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-2">
@@ -63,7 +83,6 @@ export default function CareersPage() {
                   className={position.urgency === "none" ? "pointer-events-none" : ""}
                 >
                   <Button
-
                     variant={position.urgency === "none" ? "disabled" : "primary"}
                     className="w-full"
                     disabled={position.urgency === "none"}
