@@ -256,7 +256,8 @@ export const jobs = [
       "Duration: 3-6 months with potential for extension or full-time conversion."
     ],
     duration: "3-6 months",
-    stipend: "According to performance (1st month unpaid)"
+    stipend: "According to performance (1st month unpaid)",
+    link: "https://forms.gle/jgCW2NosVR1LPpmT9"
   },
   {
     id: 8,
@@ -293,6 +294,7 @@ export const jobs = [
       "Duration: 3-6 months with potential for extension or full-time conversion."
     ],
     duration: "3-6 months",
-    stipend: "According to performance (1st month unpaid)"
+    stipend: "According to performance (1st month unpaid)",
+    link: "https://forms.gle/Mt4r1B4Srs2eNFm18"
   }
 ];

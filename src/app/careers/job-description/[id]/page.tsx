@@ -57,11 +57,30 @@ export default function JobDescriptionPage() {
       {renderList(job.keyResponsibilities)}
       <h3 className="text-xl font-bold mb-2">Requirements</h3>
       {renderList(job.requirements)}
-      <Link href={`/careers/job-description/${id}/apply?job=${encodeURIComponent(job.title)}`}>
-        <Button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg">
-          Apply Now
-        </Button>
-      </Link>
+
+      <div className="flex items-center gap-4 mt-6">
+        <Link
+          href={`/careers/job-description/${id}/apply?job=${encodeURIComponent(
+            job.title
+          )}`}
+        >
+          <Button variant="primary" className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg">
+            Apply Now
+          </Button>
+        </Link>
+
+        {job.link && (
+          <a
+            href={job.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline" className="bg-white border border-gray-300 text-gray-800!important px-6 py-3 rounded-lg">
+              Fill the Form
+            </Button>
+          </a>
+        )}
+      </div>
     </div>
   );
 }

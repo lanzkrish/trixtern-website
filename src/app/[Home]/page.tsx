@@ -48,7 +48,7 @@ function Home() {
               </Button>
             </Link>
             <a href="https://calendly.com/lanzkrish/30min" target="_blank" rel="noopener noreferrer" > 
-              <Button variant="outline" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-lg w-full sm:w-auto">
+              <Button variant="outlinedark" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-lg w-full sm:w-auto">
                 Consult
               </Button>
             </a>
@@ -256,7 +256,7 @@ function Home() {
               </Button>
             </Link>
             <Link href="/contact-us" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-lg w-full sm:w-auto">
+              <Button variant="outlinedark" className="text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-2xl shadow-lg w-full sm:w-auto">
                 Contact Us
               </Button>
             </Link>
