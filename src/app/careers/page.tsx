@@ -43,10 +43,10 @@ export default function CareersPage() {
         <div className="relative z-10 flex flex-col justify-center items-center h-full bg-black/50">
           <h2 className="text-4xl font-bold mb-4">Be a part of something big</h2>
           <p className="text-lg mb-8">
-            We're on a mission to innovate and lead in the tech industry. Join us and make an impact.
+            We&apos;re on a mission to innovate and lead in the tech industry. Join us and make an impact.
           </p>
           <Link href="/contact">
-            <Button variant="primary" size="lg">
+            <Button variant="primary" className="px-6 py-3">
               Get in Touch
             </Button>
           </Link>
