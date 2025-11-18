@@ -8,6 +8,13 @@ const glassClass = "bg-[rgba(30,30,30,0.6)] backdrop-blur-md border border-[rgba
 
 const projects = [
   {
+    title: "Webgage Labs",
+    description:
+      "Webgage Labs provides hands-on internships, professional resume solutions, and expert-led career programs designed to build skills, boost confidence, and help students achieve long-term success in the industry.",
+    image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdfJrqVdHX6ZWTu1rgVohDOblnBGcz9tNjUKQ3",
+    link: "https://webgagelabs.com/",
+  },
+  {
     title: "Tarutra Robotics",
     description:
       "Tarutra Robotics delivers customized automation, conveyor systems, underwater robots, and R&D solutions, enhancing efficiency, productivity, and business growth.",
@@ -20,6 +27,13 @@ const projects = [
       "PC Quicker offers fast, reliable PC and laptop repair services right at your doorstep. From hardware issues to software troubleshooting, our expert technicians ensure your devices run smoothly, saving you time and hassle with professional, on-site support.",
     image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdKzIMu9lHcSwb1zemn8g7XJP6a3290hOuIxrk",
     link: "https://pcquicker.com/",
+  },
+  {
+    title: "Interncify",
+    description:
+      "Interncify offers immersive learning programs, expert-guided courses, and research publishing pathways that equip students with the skills, experience, and insights needed to excel in the evolving world of technology.",
+    image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdaSxiZOQkZIonshmr2B3v4C5GtFb9EJuSpqTz",
+    link: "https://interncify.com/",
   },
   // {
   //   title: "Svadhishthana Green Energy",
