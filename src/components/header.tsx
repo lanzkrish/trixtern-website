@@ -20,7 +20,7 @@ export default function Header() {
             <Link href="../" className="-m-1.5 p-1.5">
               <span className="sr-only">Trixtern</span>
               <Image
-                src="/trixtern_full.png"
+                src="/trixtern-red-nbg.png"
                 alt="Trixtern Technologies"
                 width={160}
                 height={35}

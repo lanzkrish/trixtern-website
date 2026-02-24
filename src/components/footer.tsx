@@ -14,7 +14,7 @@ export default function Footer() {
             className="flex justify-center space-x-3 lg:justify-start"
           >
             <Image
-              src="/trixtern_full.png"
+              src="/trixtern-red-nbg.png"
               alt="Trixtern Technologies"
               width={180}
               height={38}
