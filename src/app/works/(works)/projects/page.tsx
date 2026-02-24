@@ -8,6 +8,13 @@ const glassClass = "bg-[rgba(30,30,30,0.6)] backdrop-blur-md border border-[rgba
 
 const projects = [
   {
+    title: "SageOdisha",
+    description:
+      "SageOdisha is a Bhubaneswar-based MNRE-approved rooftop solar company providing residential and commercial solar installations, subsidy support, and renewable energy solutions.",
+    image: "https://eu0yhcfg0e.ufs.sh/f/rKAT0N5cfFSdHlINUfyT2ZA7fztoIdQSTHmnu4cCDYhsEFW1",
+    link: "https://sageodisha.com/",
+  },
+  {
     title: "Webgage Labs",
     description:
       "Webgage Labs provides hands-on internships, professional resume solutions, and expert-led career programs designed to build skills, boost confidence, and help students achieve long-term success in the industry.",
